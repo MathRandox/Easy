@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Tortuga {
 	static Scanner sc = new Scanner(System.in);
-	static boolean pluma = false;
+	static boolean pluma = false; //verificación de la pluma
 	static char direccion = 'r'; //direccion inicial derecha
-	static int fila = 0, col = 0;
+	static int fila = 0, col = 0; //invocando fila y columna
 	public static void main(String[] args) {
 		int[][] piso = new int [20][20];
 		inicializador(piso);
@@ -79,7 +79,7 @@ public class Tortuga {
 						}
 					}
 				}
-			} else { // la pluma est� abajo
+			} else { // la pluma está abajo
 				if (direccion == 'r') {//si direccion es derecha
 					for (int c = col; c < posiciones; c++) {
 						piso[fila][c] = 1;
